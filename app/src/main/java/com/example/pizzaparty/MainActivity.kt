@@ -11,7 +11,6 @@ import kotlin.math.ceil
 const val SLICES_PER_PIZZA = 8
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var numAttendEditText: EditText
     private lateinit var numPizzasTextView: TextView
     private lateinit var howHungryRadioGroup: RadioGroup
