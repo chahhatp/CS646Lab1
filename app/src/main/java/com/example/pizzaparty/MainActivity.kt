@@ -8,12 +8,19 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.math.ceil
 
+//Number of slices in each pizza
 const val SLICES_PER_PIZZA = 8
 
+//Main Class
 class MainActivity : AppCompatActivity() {
 
+    //Total number of people attending the party
     private lateinit var numAttendEditText: EditText
+
+    //Total pizzas calculated as per the number of people and hungry ratio
     private lateinit var numPizzasTextView: TextView
+
+    //The hungry ratio radio button - light, medium and ravenous
     private lateinit var howHungryRadioGroup: RadioGroup
 
     override fun onCreate(savedInstanceState: Bundle?) {
