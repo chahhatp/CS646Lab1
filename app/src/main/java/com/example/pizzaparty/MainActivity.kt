@@ -11,16 +11,22 @@ import kotlin.math.ceil
 //Number of slices in each pizza
 const val SLICES_PER_PIZZA = 8
 
-//Main Class
+/**
+ * Main class
+ */
 class MainActivity : AppCompatActivity() {
 
-    //Total number of people attending the party
+    /**Total number of people attending the party*/
     private lateinit var numAttendEditText: EditText
 
-    //Total pizzas calculated as per the number of people and hungry ratio
+    /**
+     * Total pizzas calculated as per the number of people and hungry ratio
+     */
     private lateinit var numPizzasTextView: TextView
 
-    //The hungry ratio radio button - light, medium and ravenous
+    /**
+     * The hungry ratio radio button - light, medium and ravenous
+     */
     private lateinit var howHungryRadioGroup: RadioGroup
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +37,9 @@ class MainActivity : AppCompatActivity() {
         howHungryRadioGroup = findViewById(R.id.hungry_radio_group)
     }
 
+    /**
+     * Calculate the number of pizza for given number of people
+     */
     fun calculateClick(view: View) {
 
         // Get the text that was typed into the EditText
